@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Hotel Booking Form</h1>
+  <form id="booking-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="check-in">Check-in Date:</label>
+    <input type="date" id="check-in" name="check-in" required>
+
+    <label for="total-days">Total Number of Days:</label>
+    <input type="number" id="total-days" name="total-days" min="1" required>
+
+    <label for="total-persons">Total Number of Persons:</label>
+    <input type="number" id="total-persons" name="total-persons" min="1" required>
+    <p class="update"><b>Note:</b> Upto 2 people there is no change in cost. Per day cost for Extra Person is <strong>1000/-</strong></p>
+
+    <label for="room-type">Room Type:</label>
+    <select id="room-type" name="room-type" required>
+      <option value="">Select Room Type</option>
+      <option value="deluxe">Deluxe Room (2500/-)</option>
+      <option value="suite">Suite Room (4000/-)</option>
+    </select>
+    
+    <label for="amenities">Amenities:</label>
+    <label for="ac">AC (1000/-)</label>
+    <img src="./AC.jpg" alt="AC image" title="AC" style="border-radius: 15%; height: 70px; width: 100px;">
+    <input type="checkbox" id="ac" name="ac">
+    <label for="locker">Locker (300/-)</label>
+    <img src="./LOCKER.jpg" alt="Locker image" title="Locker" style="border-radius: 15%; height: 70px; width: 100px;">
+    <input type="checkbox" id="locker" name="locker">
+
+    <label for="advance-payment">Advance Payment:</label>
+    <input type="number" id="advance-payment" name="advance-payment" min="0" required>
+
+    <input type="submit" value="Book Now">
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
